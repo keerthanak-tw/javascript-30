@@ -12,6 +12,11 @@ const keySoundMapping = {
 
 document.addEventListener("keydown", (event) => {
     if (Object.keys(keySoundMapping).includes(event.code)) {
-        document.getElementById(keySoundMapping[event.code]).play();
+        const id = keySoundMapping[event.code];
+        document.getElementById(`${id}-key`).classList.add('playing');
+        document.getElementById(id).play();
+        setTimeout(() => {
+            document.getElementById(`${id}-key`).classList.remove('playing');
+        }, 200);
     }
 });

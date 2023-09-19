@@ -37,3 +37,9 @@ html {
     justify-content: center;
     height: 100vh;
 }
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
