@@ -1,0 +1,39 @@
+html {
+    background-image: url(./background.jpg);
+    font-size: 1rem;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.key {
+    width: 6rem;
+    height: 4rem;
+    padding: 0.5rem;
+    background: rgba(0,0,0,0.4);
+    border: 4px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+    margin: 1rem;
+    text-shadow: 0 0 1rem black;
+}
+
+.key kbd {
+    font-size: 2.5rem;
+    padding-bottom: 5px;
+}
+.key span {
+    color: yellow;
+    font-size: 0.8rem;
+}
+
+.keyboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
