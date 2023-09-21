@@ -1,0 +1,61 @@
+html {
+    background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-size: cover;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 3rem;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.center-point {
+    background-color: rgb(4, 24, 83);
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.needle {
+    height: 65px;
+    width: 3px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transition: all 0.1s ease-in;
+}
+
+.needle.hour {
+    width: 5px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+
+.needle.second {
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: rgb(4, 24, 83);
+}
+
